@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { Todo } from '../providers/todo';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -29,6 +30,6 @@ import { ToDoModalPage } from '../pages/to-do-modal/to-do-modal';
     TabsPage,
     ToDoModalPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},{provide :  Todo, useClass :Todo}]
 })
 export class AppModule {}
