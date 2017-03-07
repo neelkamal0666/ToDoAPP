@@ -6,13 +6,16 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { ToDoModalPage } from '../pages/to-do-modal/to-do-modal';
+
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ToDoModalPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +26,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ToDoModalPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
